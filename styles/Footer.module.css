@@ -1,0 +1,97 @@
+footer.footer {
+  background-color: #365564;
+}
+
+div.footer {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin: 0 auto;
+}
+
+.contactUs {
+  text-align: center;
+  color: #faff00;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f1f1f1;
+  margin: 0.8rem 0;
+}
+
+.contactUs > div {
+  margin-bottom: 0.6rem;
+}
+
+.contactUs span {
+  margin-left: 0.4rem;
+}
+
+.address span {
+  color: #fff;
+  line-height: 1.4rem;
+}
+
+.form {
+  width: 220px;
+  margin: 0 auto;
+}
+
+.form input {
+  width: 100%;
+  margin-top: 0.6rem;
+  outline: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px;
+  border: none;
+}
+
+p.errorMessage {
+  color: #faff00;
+  /* margin: 0.4rem 0 0.2rem 0.4rem; */
+  margin: 0.4rem 0 0 0.2rem;
+  font-size: 0.8rem;
+}
+
+.form textarea {
+  margin-top: 0.4rem;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  resize: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.form button {
+  margin-top: 0.6rem;
+  background-color: #003d90;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #e7e6e6;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  div.footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .form {
+    margin: 0;
+    width: 500px;
+  }
+}

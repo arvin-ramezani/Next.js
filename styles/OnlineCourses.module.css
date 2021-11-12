@@ -1,0 +1,56 @@
+.onlineCourses {
+  background: url(/images/background/online-courses-background.jpg) no-repeat
+    fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.onlineCoursesText {
+  background-color: #c2c4c3;
+  border-radius: 15px;
+  width: 550px;
+  height: 270px;
+  padding: 2.4rem 2.4rem 1.2rem 1.8rem;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+
+.onlineCoursesText h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.onlineCoursesText p {
+  margin-top: 1.6rem;
+  line-height: 2rem;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .onlineCourses {
+    background: url(/images/background/portrait/hero2.jpg) no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+
+  .onlineCoursesText {
+    right: 2rem;
+    width: 280px;
+    height: auto;
+    bottom: 10%;
+    top: auto;
+  }
+
+  .onlineCourses h3 {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .onlineCourses p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+}

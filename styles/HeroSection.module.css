@@ -1,0 +1,56 @@
+.heroContainer {
+  background: url(/images/background/hero.jpg) no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.heroText {
+  background-color: rgba(89, 92, 137, 0.85);
+  border-radius: 25px;
+  max-width: 570px;
+  height: 400px;
+  color: #fff;
+  padding: 2rem 1.6rem;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  transform: translate(0, -50%);
+}
+
+.heroText h1 {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.heroText p {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 2.4rem;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .heroContainer {
+    background: url(/images/background/portrait/heroo.jpg) no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+
+  .heroText {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+    height: fit-content;
+  }
+
+  .heroText h1 {
+    font-size: 2rem;
+  }
+
+  .heroText p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+}

@@ -1,0 +1,118 @@
+.header {
+  background-color: rgba(54, 85, 100, 0.7);
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  height: 75px;
+  max-width: 1280px;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin: 0.4rem 0;
+}
+
+.nav {
+  background-color: #365564;
+  margin: auto 0;
+  height: 70%;
+  border-radius: 20px;
+  display: block;
+}
+.nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.nav a {
+  color: #fff;
+  display: block;
+  margin: 0 1.4rem;
+}
+
+.nav ul li.active {
+  font-weight: 700;
+}
+
+.nav li.enroll a {
+  font-weight: 700;
+  color: #faff00;
+  letter-spacing: 1px;
+}
+
+.mobileNav {
+  display: none;
+}
+
+.mobileNav .mobileNavContent {
+  position: absolute;
+  top: 0;
+  height: 400px;
+  background: #365564;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.mobileNavContent svg {
+  font-size: 1.6rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.mobileNav ul.mobileNavList {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.mobileNav li.enroll a {
+  font-weight: 700;
+  color: #faff00;
+  letter-spacing: 1px;
+}
+
+ul.mobileNavList li.active {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 120px;
+    margin: auto 0;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobileNav {
+    display: block;
+    margin: auto 0;
+    color: #fff;
+  }
+
+  .mobileNav > .navIcon {
+    font-size: 2.4rem;
+  }
+}

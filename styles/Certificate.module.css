@@ -1,0 +1,92 @@
+.certificate {
+  background: url(/images/background/certificate-background.jpg) no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  background-position: center;
+}
+
+.certificate div.licenseCardWrapper,
+.certificate div.certificateCardWrapper {
+  width: 440px;
+  /* height: 330px; */
+  padding: 3rem 2rem;
+  background: rgba(33, 26, 20, 0.6);
+  position: absolute;
+  bottom: 10%;
+  border-radius: 5px;
+}
+
+.certificate div.licenseCardWrapper {
+  left: 5%;
+}
+
+div.licenseCard,
+div.certificateCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 2rem 4rem;
+}
+
+.certificate p {
+  font-size: 18px;
+  margin-top: 1.2rem;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: center;
+}
+
+.certificate div.certificateCardWrapper {
+  right: 5%;
+}
+
+@media screen and (max-width: 1204px) {
+  .certificate {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+      url(/images/background/portrait/certificate.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+  }
+
+  .certificate div.certificateWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .certificate div.licenseCardWrapper,
+  .certificate div.certificateCardWrapper {
+    padding: 0;
+    width: 220px;
+    background: rgba(33, 26, 20, 0.6);
+    position: static;
+    bottom: 10%;
+    border-radius: 5px;
+    margin: 1rem auto;
+  }
+
+  .certificate div.licenseCardWrapper {
+    left: 5%;
+  }
+
+  div.licenseCard,
+  div.certificateCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1rem 2rem;
+  }
+
+  .certificate p {
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+}

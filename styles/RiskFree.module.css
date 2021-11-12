@@ -1,0 +1,59 @@
+.riskFree {
+  background: url(/images/background/risk-free-background.jpg) no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.riskFreeText {
+  background-color: #302e31;
+  border-radius: 15px;
+  width: 550px;
+  height: 270px;
+  padding: 2.4rem 2.4rem 1.2rem 1.8rem;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  color: #f1f1f1;
+}
+
+.riskFreeText h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.riskFreeText p {
+  margin-top: 1.6rem;
+  line-height: 2rem;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .riskFree {
+    background: url(/images/background/portrait/risk-free.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+  }
+
+  .riskFreeText {
+    bottom: 2rem;
+    top: auto;
+    width: auto;
+    height: auto;
+    margin: 0 2.5rem;
+  }
+
+  .riskFree h3 {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .riskFree p {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+  }
+}
