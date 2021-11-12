@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import styled from "styled-components";
 import React, { FC, useState } from "react";
 import classes from "../../styles/Header.module.css";
 import { useRouter } from "next/router";
@@ -15,7 +14,6 @@ const Header: FC = () => {
 
   const showMobileNavHandler = () => setShowMobileNav((prev) => !prev);
 
-  console.log(router.pathname === "/");
 
   return (
     <div className={classes.test}>
@@ -36,18 +34,18 @@ const Header: FC = () => {
                 <Link href="/">Home</Link>
               </li>
               <li className={router.pathname === "/articles" ? "active" : ""}>
-                <Link href="">Articles</Link>
+                <a>Articles</a>
               </li>
               <li className={router.pathname === "/courses" ? "active" : ""}>
-                <Link href="">Courses</Link>
+                <a>Courses</a>
               </li>
               <li className={classes.enroll}>
-                <Link href="">Enrol Now</Link>
+                <a>Enrol Now</a>
               </li>
             </ul>
           </nav>
           <AnimatePresence>
-            <div className={classes.mobileNavVariants}>
+            <div className={classes.mobileNav}>
               <div className={classes.navIcon} onClick={showMobileNavHandler}>
                 <HiMenuAlt3 />
               </div>

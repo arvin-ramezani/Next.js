@@ -1,6 +1,5 @@
 .header {
   background-color: rgba(54, 85, 100, 0.7);
-  /* position: absolute; */
   top: 0;
   left: 0;
   right: 0;
@@ -13,6 +12,7 @@
   margin: auto;
   height: 75px;
   max-width: 1280px;
+  padding: 0 2rem;
 }
 
 .logo {
