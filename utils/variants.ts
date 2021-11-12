@@ -6,13 +6,13 @@ export const certificateVriants: Variants = {
     opacity: 1,
     rotate: 0,
     scale: 1,
-    transition: { delay: 0.2, duration: 0.6 },
+    transition: { delay: 0.6, duration: 0.6 },
   },
 };
 
 export const licenseVriants: Variants = {
   initial: { opacity: 0, rotate: 30 },
-  animate: { opacity: 1, rotate: 0, transition: { delay: 0.2, duration: 0.4 } },
+  animate: { opacity: 1, rotate: 0, transition: { delay: 0.6, duration: 0.6 } },
 };
 
 export const mobileNavVariants: Variants = {
